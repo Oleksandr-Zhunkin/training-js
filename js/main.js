@@ -1,20 +1,20 @@
-// function getOrders() {
-//   const END_POINT = "/orders/list";
-//   const BASE_URL = "https://my.prom.ua/api/v1";
-//   const API_KEY = "78d8fe6d2f7c7a14b22bd069a39f91ad3635ddc6";
-//   const params = new URLSearchParams({
-//     Authorization: API_KEY,
-//   });
+function getOrders() {
+  const END_POINT = "/orders/list";
+  const BASE_URL = "https://my.prom.ua/api/v1";
+  const API_KEY = "78d8fe6d2f7c7a14b22bd069a39f91ad3635ddc6";
+  const params = new URLSearchParams({
+    Authorization: API_KEY,
+  });
 
-//   return fetch(`${BASE_URL}${END_POINT}?${params}`).then((res) => {
-//     if (!res.ok) {
-//       throw new Error(res.status);
-//     }
-//     return res.json();
-//   });
-// }
+  return fetch(`${BASE_URL}${END_POINT}?${params}`).then((res) => {
+    if (!res.ok) {
+      throw new Error(res.status);
+    }
+    return res.json();
+  });
+}
 
-// getOrders();
+getOrders();
 
 // function onlyDuplicates(str) {
 //   let newStr = "";
