@@ -1,20 +1,20 @@
-function getOrders() {
-  const END_POINT = "/orders/list";
-  const BASE_URL = "https://my.prom.ua/api/v1";
-  const API_KEY = "78d8fe6d2f7c7a14b22bd069a39f91ad3635ddc6";
-  const params = new URLSearchParams({
-    Authorization: API_KEY,
-  });
+// function getOrders() {
+//   const END_POINT = "/orders/list";
+//   const BASE_URL = "https://my.prom.ua/api/v1";
+//   const API_KEY = "78d8fe6d2f7c7a14b22bd069a39f91ad3635ddc6";
+//   const params = new URLSearchParams({
+//     Authorization: API_KEY,
+//   });
 
-  return fetch(`${BASE_URL}${END_POINT}?${params}`).then((res) => {
-    if (!res.ok) {
-      throw new Error(res.status);
-    }
-    return res.json();
-  });
-}
+//   return fetch(`${BASE_URL}${END_POINT}?${params}`).then((res) => {
+//     if (!res.ok) {
+//       throw new Error(res.status);
+//     }
+//     return res.json();
+//   });
+// }
 
-getOrders();
+// getOrders();
 
 // function onlyDuplicates(str) {
 //   let newStr = "";
@@ -47,3 +47,19 @@ getOrders();
 //   return [...str].filter((s) => str.isDuplicate(s)).join``;
 // }
 // console.log(onlyDuplicates(str));
+
+// const str = "fsfffgjtjtmuhhhh";
+
+// String.prototype.isDuplicate = function (char) {
+//   return this.split(char).length > 2;
+// };
+
+// function onlyDuplicates(str) {
+//   return [...str].filter((s) => str.isDuplicate(s)).join``;
+// }
+
+// console.log(onlyDuplicates(str)
+
+const root = document.documentElement;
+
+root.style.setProperty("--main-color", "#fff");
